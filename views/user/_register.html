@@ -1,0 +1,59 @@
+
+<div class="user signup">
+  <div class="ui middle very relaxed page grid">
+    <div class="column">
+      <form class="ui form" action="/register" method="post">
+        {{ .xsrfdata }}
+        <h3 class="ui top attached header">
+          注册
+        </h3>
+        <div class="ui attached segment">
+{{if .ErrorMsg }}
+    <div class="ui negative message">
+    <p>{{.ErrorMsg}}</p>
+    </div>      
+{{end}}	
+            <div class="required inline field ">
+              <label for="user_name">手机号</label>
+              <input id="user_name" name="mobile" value="" autofocus required>
+            </div>
+            <div class="required inline field ">
+              <label for="email">邮箱</label>
+              <input id="email" name="email" type="email" value="" required>
+            </div>
+            <div class="required inline field ">
+              <label for="password">密码</label>
+              <input id="password" name="password" type="password" value="" required>
+            </div>
+            <div class="required inline field ">
+              <label for="retype">确认密码</label>
+              <input id="retype" name="retype" type="password" value="" required>
+            </div>
+            
+              <div class="inline field">
+                <label></label>
+                <input type="hidden" name="captcha_id" value="{{.CaptchaId}}">
+                <a class="captcha" href="javascript:" tabindex="-1">
+                  <img onclick="this.src=('/captcha/{{.CaptchaId}}.png?reload='+(new Date()).getTime())" class="captcha-img" src="/captcha/{{.CaptchaId}}.png">
+                </a>
+              </div>
+              <div class="required inline field ">
+                <label for="captcha">验证码</label>
+                <input id="captcha" name="captcha" value="" autocomplete="off">
+              </div>
+            
+
+            <div class="inline field">
+              <label></label>
+              <button class="ui green button">创建帐户</button>
+            </div>
+            <div class="inline field">
+              <label></label>
+              <a href="/login">已经注册？立即登录！</a>
+            </div>
+          
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
