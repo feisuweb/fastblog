@@ -196,10 +196,9 @@ func (this *SettingHandle) PostSettingPassword() {
 	this.Ctx.Output.Header("Cache-Control", "public")
 
 	var (
-		minfo     *models.User        = new(models.User)
-		msloginfo *models.UserSafeLog = new(models.UserSafeLog)
-		err       bool
-		ip        string
+		minfo *models.User = new(models.User)
+		err   bool
+		ip    string
 	)
 	ip = this.Ctx.Request.Header.Get("X-Forwarded-For")
 	oldPassword := strings.TrimSpace(this.GetString("oldpassword"))
@@ -207,7 +206,6 @@ func (this *SettingHandle) PostSettingPassword() {
 	err = minfo.ChangePassword(LoginUser.Id, oldPassword, newPassword)
 
 	if err {
-		msloginfo.AddSafeLog(LoginUser, "changepassword", ip, "密码修改成功！")
 		//发送密码修改通知给用户
 		t := time.Now().Format("2006-01-02 15:04:05")
 		var ni notify.NotifyInfo
@@ -233,7 +231,6 @@ func (this *SettingHandle) PostSettingPassword() {
 		return
 	} else {
 
-		msloginfo.AddSafeLog(LoginUser, "changepassword", ip, "密码修改失败！")
 	}
 
 	this.Data["ErrorMsg"] = "修改密码失败！"

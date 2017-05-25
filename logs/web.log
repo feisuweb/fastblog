@@ -1,26 +1,6 @@
-2017/05/26 01:35:43 [D] [server.go:2568] |      127.0.0.1|[47m 304 [0m|     80.083µs|   match|[44m GET     [0m /static/img/favicon.png
-2017/05/26 01:35:43 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|  23.266176ms|   match|[44m GET     [0m /     r:/
-2017/05/26 01:35:43 [D] [server.go:2568] |      127.0.0.1|[47m 304 [0m|   1.999093ms|   match|[44m GET     [0m /static/js/libs/jquery.are-you-sure.js
-2017/05/26 01:35:43 [D] [server.go:2568] |      127.0.0.1|[47m 304 [0m|   1.075313ms|   match|[44m GET     [0m /static/assets/octicons-4.3.0/octicons.min.css
-2017/05/26 01:35:43 [D] [server.go:2568] |      127.0.0.1|[47m 304 [0m|  43.420549ms|   match|[44m GET     [0m /static/css/semantic-2.2.10.min.css
-2017/05/26 01:35:43 [D] [server.go:2568] |      127.0.0.1|[47m 304 [0m|   51.62078ms|   match|[44m GET     [0m /static/js/jquery-1.11.3.min.js
-2017/05/26 01:35:43 [D] [server.go:2568] |      127.0.0.1|[47m 304 [0m|   19.53978ms|   match|[44m GET     [0m /static/js/apps.js
-2017/05/26 01:35:43 [D] [server.go:2568] |      127.0.0.1|[47m 304 [0m|  26.280331ms|   match|[44m GET     [0m /static/js/semantic-2.2.10.min.js
-2017/05/26 01:35:43 [D] [server.go:2568] |      127.0.0.1|[47m 304 [0m|  16.066869ms|   match|[44m GET     [0m /static/img/avatar_default.png
-2017/05/26 01:35:43 [D] [server.go:2568] |      127.0.0.1|[47m 304 [0m|  80.585125ms|   match|[44m GET     [0m /static/js/libs/clipboard-1.5.9.min.js
-2017/05/26 01:35:43 [D] [server.go:2568] |      127.0.0.1|[47m 304 [0m|  82.640097ms|   match|[44m GET     [0m /static/js/libs/emojify-1.1.0.min.js
-2017/05/26 01:35:43 [D] [server.go:2568] |      127.0.0.1|[47m 304 [0m|  89.445295ms|   match|[44m GET     [0m /static/assets/font-awesome-4.6.3/css/font-awesome.min.css
-2017/05/26 01:35:43 [D] [server.go:2568] |      127.0.0.1|[47m 304 [0m|  96.130828ms|   match|[44m GET     [0m /static/css/apps.css
-2017/05/26 01:35:43 [D] [server.go:2568] |      127.0.0.1|[47m 304 [0m|    160.693µs|   match|[44m GET     [0m /static/assets/octicons-4.3.0/octicons.woff2
-2017/05/26 01:35:43 [D] [server.go:2568] |      127.0.0.1|[47m 304 [0m|    578.932µs|   match|[44m GET     [0m /static/assets/font-awesome-4.6.3/fonts/fontawesome-webfont.woff2
-2017/05/26 01:35:43 [D] [server.go:2568] |      127.0.0.1|[47m 304 [0m|     96.892µs|   match|[44m GET     [0m /static/css/themes/default/assets/fonts/icons.woff2
-2017/05/26 01:35:46 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|   7.353688ms|   match|[44m GET     [0m /user/settings   r:/user/settings
-2017/05/26 01:35:48 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|   7.996121ms|   match|[44m GET     [0m /customer   r:/customer/
-2017/05/26 01:35:48 [D] [server.go:2568] |      127.0.0.1|[47m 304 [0m|     62.553µs|   match|[44m GET     [0m /static/img/404.png
-2017/05/26 01:35:48 [D] [server.go:2568] |      127.0.0.1|[43m 404 [0m|   4.997321ms| nomatch|[44m GET     [0m /site
-2017/05/26 01:35:49 [D] [server.go:2568] |      127.0.0.1|[43m 404 [0m|    2.07479ms| nomatch|[44m GET     [0m /domain
-2017/05/26 01:35:50 [D] [server.go:2568] |      127.0.0.1|[43m 404 [0m|   1.829424ms| nomatch|[44m GET     [0m /service
-2017/05/26 01:35:51 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|   4.292125ms|   match|[44m GET     [0m /     r:/
-2017/05/26 01:35:52 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|   4.363755ms|   match|[44m GET     [0m /customer   r:/customer/
-2017/05/26 01:35:52 [D] [server.go:2568] |      127.0.0.1|[43m 404 [0m|   1.845523ms| nomatch|[44m GET     [0m /site
-2017/05/26 01:35:53 [D] [server.go:2568] |      127.0.0.1|[42m 200 [0m|   3.078337ms|   match|[44m GET     [0m /customer   r:/customer/
+2017/05/26 02:04:06 [I] [main.go:22] FastBLog服务已经启动... 
+2017/05/26 02:04:06 [E] [template.go:174] parse template err: user/_profile.html template: user/_profile.html:17: function "GetUserTypeName" not defined
+2017/05/26 02:04:06 [I] [asm_amd64.s:2197] http server Running on http://:8080
+2017/05/26 02:04:06 [C] [asm_amd64.s:2197] ListenAndServe:  listen tcp :8080: bind: address already in use
+2017/05/26 02:04:43 [I] [main.go:22] FastBLog服务已经启动... 
+2017/05/26 02:04:43 [I] [asm_amd64.s:2197] http server Running on http://:8080
