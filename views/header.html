@@ -64,14 +64,13 @@
                 </a>
               {{if .IsLogin}}
                 <a class="item {{if eq "/" .CurrentNavigation}}active{{end}}" href="/">控制面板</a>
-                <a class="item {{if eq "/customer" .CurrentNavigation}}active{{end}}" href="/customer">客户管理</a>
-                <a class="item {{if eq "/site" .CurrentNavigation}}active{{end}}" href="/site">销售管理</a>
-                <a class="item {{if eq "/domain" .CurrentNavigation}}active{{end}}" href="/domain">佣金管理</a>
-                <a class="item {{if eq "/server" .CurrentNavigation}}active{{end}}" href="/service">代理商管理</a>
+                <a class="item {{if eq "/article" .CurrentNavigation}}active{{end}}" href="/article">文章管理</a>
+                <a class="item {{if eq "/category" .CurrentNavigation}}active{{end}}" href="/category">分类管理</a>
+                <a class="item {{if eq "/publish" .CurrentNavigation}}active{{end}}" href="/publish">发布博客</a>
               {{else}}               
                 <a class="item {{if eq "/" .CurrentNavigation}}active{{end}}" href="/">首页</a>
               {{end}}                
-                  <a class="item {{if eq "/help" .CurrentNavigation}}active{{end}}" href="/help" rel="noreferrer">帮助</a>
+                  <a class="item {{if eq "/search" .CurrentNavigation}}active{{end}}" href="/search" rel="noreferrer">搜索</a>
 
               {{if .IsLogin}}
                   <div class="right menu">
@@ -82,14 +81,11 @@
                       </span>
                       <div class="menu">
                         <a class="item" href="/customer/create">
-                          <i class="octicon octicon-plus"></i> 添加客户信息
+                          <i class="octicon octicon-plus"></i> 创建文章
                         </a>
                         <a class="item" href="/site/create">
-                          <i class="octicon octicon-repo-clone"></i> 创建销售顾问
+                          <i class="octicon octicon-repo-clone"></i> 创建分类
                         </a>
-                        <a class="item" href="/domain/create">
-                          <i class="octicon octicon-organization"></i> 添加代理商
-                        </a>                      
                       </div>
                     </div>
 
